@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <title>Restaurant Reservation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container, .menu-container {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color:aliceblue
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        h2 {
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body background="c:\Users\Brian\OneDrive\Desktop\restobg.jpg">
+
+<div class="form-container">
+    <h2>Kepo Kitchen Reservation</h2>
+    <form action="save_regis.php" method="post">
+        <label for="name"><b>Name:</b></label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email"><b>Email:</b></label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone"><b>Phone Number:</b></label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="date"><b>Reservation Date:</b></label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="time"><b>Reservation Time:</b></label>
+        <input type="time" id="time" name="time" required>
+        
+        <label for="guests"><b>Number of Guests:</b></label>
+        <input type="number" id="guests" name="guests" required>
+        
+        <input type="submit" value="Reserve">
+    </form>
+</div>
+
+<div class="menu-container">
+    <h2>Menu</h2>
+    <table>
+        <tr bgcolor="lightblue">
+            <th>Category</th>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr bgcolor="cyan">
+            <td bgcolor="lightgreen" rowspan="3">Appetizers</td>
+            <td>Spring Rolls</td>
+            <td>Vegetable spring rolls with dipping sauce</td>
+            <td>$5.00</td>
+        </tr>
+        <tr bgcolor="cyan">
+            <td>Garlic Bread</td>
+            <td>Toasted bread with garlic and herbs</td>
+            <td>$4.00</td>
+        </tr>
+        <tr bgcolor="cyan">
+            <td>Stuffed Mushrooms</td>
+            <td>Mushrooms stuffed with cheese and herbs</td>
+            <td>$6.00</td>
+        </tr>
+        <tr>
+            <td bgcolor="lightblue" colspan="4" style="text-align:center;">Main Course</td>
+        </tr>
+        <tr bgcolor="cyan">
+            <td bgcolor="orange" rowspan="2">Pasta</td>
+            <td>Spaghetti Carbonara</td>
+            <td>Spaghetti with creamy sauce and pancetta</td>
+            <td>$12.00</td>
+        </tr>
+        <tr bgcolor="cyan">
+            <td>Lasagna</td>
+            <td>Layers of pasta with meat, cheese, and tomato sauce</td>
+            <td>$14.00</td>
+        </tr>
+        <tr bgcolor="cyan">
+            <td bgcolor="white">Desserts</td>
+            <td>Cheesecake</td>
+            <td>Classic New York style cheesecake</td>
+            <td>$7.00</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
