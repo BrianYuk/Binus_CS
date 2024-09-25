@@ -27,3 +27,8 @@ while choice != 4:
             print("Exiting...")
             break
         case _: print("Invalid command")
+
+"""
+same as your calculator, remember to add input validation and error handling. the code shouldnt crash when an item is not found in the list
+it should just give feedback to the user! overall the code is still good, just a little incomplete.
+"""
