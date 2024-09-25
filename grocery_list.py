@@ -15,7 +15,8 @@ while choice != 4:
             print("Item", add, "added to your grocery list.")
         case 2:
             if len(grocery) > 0:
-                print(grocery)
+                for item in grocery:
+                    print(item)
             else:
                 print("Nothing in list.")
         case 3:
