@@ -46,3 +46,10 @@ def calculator():
 
 if __name__ == "__main__":
     calculator()
+
+"""
+hi you forgot to make the file a .py btw, and the code is already good. if you'd like to really complete it, remember to add input validation (print back a message to the user that the operation works 
+or show them what is happeing) and error handling (making sure there is an error message when the user inputs incorrect numbers/strings) for example, when i input a number when the code asks for only yes or no
+the code crashes, or when i input a string when i should input a number, the code crashes. instead of allowing the code to crash during unexpected input, try to expect the worst input from the user so you have
+it covered. overally still good and basic :D
+"""
